@@ -1,18 +1,10 @@
 function fibonacci(n) {
   let elements = [0,1];
 
-  if (n > 2) {
     for(let i = 2; i < n; i++){
-      let lastNumber = elements[elements.length - 1];
-      let secondTolastNumber = elements[elements.length - 2];
-
-      // console.log(`running for loop, i is: ${i}, lastNumber is ${lastNumber}, secondTolastNumber is ${secondTolastNumber}`)
-
-      let newElement = lastNumber + secondTolastNumber;
-      elements.push(newElement);
+      elements[i] = elements[i - 1] +elements[i - 2];
     }
-  }
-  return elements.slice(0, n)
+  return elements;
 }
 
 
