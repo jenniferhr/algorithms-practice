@@ -1,0 +1,8 @@
+function isPowerOfTwo(num) {
+  return Number.isInteger(Math.log2(num));
+}
+
+console.log(isPowerOfTwo(-1)) //false
+console.log(isPowerOfTwo(0)) //false
+console.log(isPowerOfTwo(1)) //true
+console.log(isPowerOfTwo(3)) //false
